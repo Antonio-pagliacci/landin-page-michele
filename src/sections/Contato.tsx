@@ -3,6 +3,7 @@ import Container from '../components/base/Container'
 import Section from '../components/base/Section'
 import Title from '../components/base/Title'
 import Button from '../components/base/Button'
+import ContactForm from '../components/forms/ContactForm'
 
 const whatsappNumber = '5522981554135'
 
@@ -20,26 +21,8 @@ const Contato: React.FC = () => {
             </p>
 
             <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="text-sm font-medium text-gray-900">WhatsApp</div>
-                  <div className="text-sm text-gray-700">(22) 98155-4135</div>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="text-sm font-medium text-gray-900">E-mail</div>
-                  <div className="text-sm text-gray-700">michellefaria.adv@gmail.com</div>
-                </div>
-
-                <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:gap-3 gap-3">
-                  <a href={`https://wa.me/${whatsappNumber}`} aria-label="Falar no WhatsApp">
-                    <Button variant="primary">Falar no WhatsApp</Button>
-                  </a>
-
-                  <a href={`mailto:michellefaria.adv@gmail.com`} aria-label="Enviar e-mail">
-                    <Button variant="outline">Enviar e-mail</Button>
-                  </a>
-                </div>
+              <div>
+                <ContactForm />
               </div>
 
               <aside className="text-sm text-gray-600">
