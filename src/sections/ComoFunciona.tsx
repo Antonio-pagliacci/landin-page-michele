@@ -16,9 +16,48 @@ const ComoFunciona: React.FC = () => {
               O atendimento é realizado on-line para todo o Brasil; presencial com agendamento prévio.
             </p>
 
-            {/* Etapas serão adicionadas no próximo commit */}
             <div className="mt-6">
-              <p className="text-sm text-gray-600">Etapas do atendimento (resumo).</p>
+              <ol className="space-y-4">
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-indigo-600 text-white flex items-center justify-center">1</div>
+                  </div>
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-900">Contato inicial</h5>
+                    <p className="text-sm text-gray-700">Contato via WhatsApp ou e-mail para expor a demanda e agendar primeira conversa.</p>
+                  </div>
+                </li>
+
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-indigo-600 text-white flex items-center justify-center">2</div>
+                  </div>
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-900">Análise da demanda</h5>
+                    <p className="text-sm text-gray-700">Avaliação preliminar dos documentos e identificação das necessidades do caso.</p>
+                  </div>
+                </li>
+
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-indigo-600 text-white flex items-center justify-center">3</div>
+                  </div>
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-900">Orientação jurídica</h5>
+                    <p className="text-sm text-gray-700">Encaminhamento técnico e opções de atuação, sempre com linguagem clara e objetiva.</p>
+                  </div>
+                </li>
+
+                <li className="flex gap-3">
+                  <div className="flex-shrink-0">
+                    <div className="h-8 w-8 rounded-full bg-indigo-600 text-white flex items-center justify-center">4</div>
+                  </div>
+                  <div>
+                    <h5 className="text-sm font-semibold text-gray-900">Atendimento</h5>
+                    <p className="text-sm text-gray-700">Atendimento on-line para todo o Brasil; presencial quando necessário, mediante agendamento prévio.</p>
+                  </div>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
