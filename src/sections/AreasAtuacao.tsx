@@ -17,7 +17,7 @@ const AreasAtuacao: React.FC = () => {
             </p>
 
             <div className="mt-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="p-4 border border-gray-100 rounded-md bg-gray-50">
                   <h4 className="text-sm font-semibold text-gray-900">Licitações</h4>
                   <p className="mt-2 text-sm text-gray-700">Orientação técnica em processos licitatórios, análise de oportunidades e conformidade com editais.</p>

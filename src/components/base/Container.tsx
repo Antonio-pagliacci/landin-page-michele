@@ -6,9 +6,9 @@ type ContainerProps = {
   maxWidthClass?: string
 }
 
-const Container: React.FC<ContainerProps> = ({ children, className = '', maxWidthClass = 'max-w-3xl' }) => {
+const Container: React.FC<ContainerProps> = ({ children, className = '', maxWidthClass = 'max-w-6xl lg:max-w-7xl' }) => {
   return (
-    <div className={`w-full px-4 sm:px-6 lg:px-8 ${className}`}>
+    <div className={`w-full px-4 sm:px-6 lg:px-12 ${className}`}>
       <div className={`mx-auto ${maxWidthClass}`}>{children}</div>
     </div>
   )
