@@ -21,8 +21,15 @@ const Sobre: React.FC = () => {
               </div>
 
               <div>
-                {/* Placeholder for diferencial block to be added in next commit */}
-                <p className="text-sm text-gray-600">&nbsp;</p>
+                <div className="bg-gray-50 border border-gray-100 rounded-md p-4">
+                  <h4 className="text-sm font-medium text-gray-900">Diferenciais</h4>
+                  <ul className="mt-3 text-sm text-gray-700 space-y-2">
+                    <li>Atuação na Administração Pública</li>
+                    <li>Formação de Agente de Contratação — Lei 14.133/2021</li>
+                    <li>Atendimento on-line para todo o Brasil</li>
+                    <li>Atendimento presencial com agendamento prévio</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
