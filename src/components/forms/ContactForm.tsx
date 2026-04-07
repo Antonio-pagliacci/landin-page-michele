@@ -33,11 +33,12 @@ const ContactForm: React.FC = () => {
     <form onSubmit={handleSubmit(onSubmit)} aria-live="polite">
       <div className="space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700">Nome</label>
+          <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700">Nome</label>
           <input
             {...register('name')}
+            id="contact-name"
             type="text"
-            className={`mt-1 block w-full rounded-md border-gray-200 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${errors.name ? 'border-red-500' : ''}`}
+            className={`mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${errors.name ? 'border-red-500' : ''}`}
             aria-invalid={!!errors.name}
             aria-describedby={errors.name ? 'name-error' : undefined}
             />
@@ -45,11 +46,12 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">Telefone</label>
+          <label htmlFor="contact-phone" className="block text-sm font-medium text-gray-700">Telefone</label>
           <input
             {...register('phone')}
+            id="contact-phone"
             type="tel"
-            className={`mt-1 block w-full rounded-md border-gray-200 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${errors.phone ? 'border-red-500' : ''}`}
+            className={`mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${errors.phone ? 'border-red-500' : ''}`}
             aria-invalid={!!errors.phone}
             aria-describedby={errors.phone ? 'phone-error' : undefined}
             />
@@ -57,11 +59,12 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">Mensagem</label>
+          <label htmlFor="contact-message" className="block text-sm font-medium text-gray-700">Mensagem</label>
           <textarea
             {...register('message')}
+            id="contact-message"
             rows={5}
-            className={`mt-1 block w-full rounded-md border-gray-200 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${errors.message ? 'border-red-500' : ''}`}
+            className={`mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${errors.message ? 'border-red-500' : ''}`}
             aria-invalid={!!errors.message}
             aria-describedby={errors.message ? 'message-error' : undefined}
           />
@@ -74,11 +77,11 @@ const ContactForm: React.FC = () => {
           </Button>
 
           {status === 'success' && (
-            <div className="text-sm text-green-600">Mensagem enviada com sucesso. Entraremos em contato em breve.</div>
+            <div role="status" className="text-sm text-green-600">Mensagem enviada com sucesso. Entraremos em contato em breve.</div>
           )}
 
           {status === 'error' && (
-            <div className="text-sm text-red-600">{errorMessage ?? 'Erro ao enviar. Tente novamente.'}</div>
+            <div role="alert" className="text-sm text-red-600">{errorMessage ?? 'Erro ao enviar. Tente novamente.'}</div>
           )}
         </div>
       </div>

@@ -18,8 +18,8 @@ const App: React.FC = () => {
         <AreasAtuacao />
         <ComoFunciona />
         <Contato />
-        <Footer />
       </main>
+      <Footer />
       <WhatsAppFloat />
     </div>
   )
