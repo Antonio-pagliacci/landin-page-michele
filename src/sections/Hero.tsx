@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
       <Container>
         <div className="py-8 md:py-12">
           <div className="bg-white rounded-md p-6">
-            <Title title="Dra. Michele Almeida" subtitle="Advogada — OAB/RJ 000000" />
-            <p className="mt-3 text-sm text-gray-600">Atendimento em Rio de Janeiro - RJ. Base institucional preparada para evolução.</p>
+            <Title title="Michelle Faria" subtitle="OAB RJ 205.639" />
+            <p className="mt-3 text-sm text-gray-600">Atuação em Assessoria Jurídica em contratos administrativos e licitações. Atendimento online e presencial com agendamento prévio.</p>
           </div>
         </div>
       </Container>

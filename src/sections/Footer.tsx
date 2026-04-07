@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="bg-white border-t mt-8">
       <Container>
         <div className="py-4 text-center text-sm text-gray-600">
-          © {new Date().getFullYear()} Dra. Michele Almeida — OAB/RJ 000000 — Rio de Janeiro - RJ
+          © {new Date().getFullYear()} Michelle Faria — OAB RJ 205.639 — Brasil
         </div>
       </Container>
     </footer>

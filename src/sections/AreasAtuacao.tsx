@@ -8,10 +8,10 @@ const AreasAtuacao: React.FC = () => {
     <Section id="areas-atuacao">
       <Container>
         <div className="py-6 bg-white rounded-md p-6">
-          <Title title="Áreas de Atuação" subtitle="Visão geral (mock)" />
+          <Title title="Áreas de Atuação" subtitle="Visão geral" />
           <p className="mt-3 text-sm text-gray-700">
-            Espaço destinado à listagem das áreas de atuação de forma sucinta. Conteúdo mockado
-            para validação da estrutura visual e hierarquia.
+            Assessoria jurídica em contratos administrativos e licitações. Conteúdo apresentado de forma
+            sucinta para validação da estrutura visual.
           </p>
         </div>
       </Container>

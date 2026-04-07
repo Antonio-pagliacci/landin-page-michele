@@ -10,9 +10,9 @@ const Contato: React.FC = () => {
         <div className="py-6 bg-white rounded-md p-6">
           <Title title="Contato" subtitle="Informações para contato" />
           <ul className="mt-3 text-sm text-gray-700 space-y-2">
-            <li>Telefone/WhatsApp: (21) 99999-0000</li>
-            <li>E-mail: contato@dramichele.com.br</li>
-            <li>Local: Rio de Janeiro - RJ</li>
+            <li>WhatsApp: (22) 98155-4135</li>
+            <li>E-mail: michellefaria.adv@gmail.com</li>
+            <li>Região atendida: Brasil — Atendimento online. Presencial com agendamento prévio.</li>
           </ul>
         </div>
       </Container>

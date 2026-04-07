@@ -8,10 +8,10 @@ const Sobre: React.FC = () => {
     <Section id="sobre">
       <Container>
         <div className="py-6 bg-white rounded-md p-6">
-          <Title title="Sobre" subtitle="Profissionalismo e atendimento humanizado" />
+          <Title title="Sobre" subtitle="Assessoria Jurídica em contratos administrativos e licitações" />
           <p className="mt-3 text-sm text-gray-700">
-            Dra. Michele Almeida atua com foco em atendimento ético e atento às necessidades do cliente.
-            Esta seção apresenta a estrutura inicial de apresentação institucional.
+            Michelle Faria (OAB RJ 205.639) presta assessoria jurídica com foco em contratos administrativos e licitações,
+            com experiência na Administração Pública. Atendimento online e presencial mediante agendamento.
           </p>
         </div>
       </Container>
