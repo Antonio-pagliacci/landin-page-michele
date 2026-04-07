@@ -7,8 +7,7 @@ const ComoFunciona: React.FC = () => {
   return (
     <Section id="como-funciona">
       <Container>
-        <div className="py-6">
-          <div className="bg-white rounded-md p-6">
+        <div className="bg-white rounded-md p-6 lg:p-8">
             <Title title="Como funciona o atendimento" subtitle="Fluxo organizado e objetivo" />
 
             <p className="mt-3 text-sm text-gray-700">
@@ -23,7 +22,7 @@ const ComoFunciona: React.FC = () => {
                     <div className="h-8 w-8 rounded-full bg-indigo-600 text-white flex items-center justify-center">1</div>
                   </div>
                   <div>
-                    <h5 className="text-sm font-semibold text-gray-900">Contato inicial</h5>
+                    <h3 className="text-sm font-semibold text-gray-900">Contato inicial</h3>
                     <p className="text-sm text-gray-700">Contato via WhatsApp ou e-mail para expor a demanda e agendar primeira conversa.</p>
                   </div>
                 </li>
@@ -33,7 +32,7 @@ const ComoFunciona: React.FC = () => {
                     <div className="h-8 w-8 rounded-full bg-indigo-600 text-white flex items-center justify-center">2</div>
                   </div>
                   <div>
-                    <h5 className="text-sm font-semibold text-gray-900">Análise da demanda</h5>
+                    <h3 className="text-sm font-semibold text-gray-900">Análise da demanda</h3>
                     <p className="text-sm text-gray-700">Avaliação preliminar dos documentos e identificação das necessidades do caso.</p>
                   </div>
                 </li>
@@ -43,7 +42,7 @@ const ComoFunciona: React.FC = () => {
                     <div className="h-8 w-8 rounded-full bg-indigo-600 text-white flex items-center justify-center">3</div>
                   </div>
                   <div>
-                    <h5 className="text-sm font-semibold text-gray-900">Orientação jurídica</h5>
+                    <h3 className="text-sm font-semibold text-gray-900">Orientação jurídica</h3>
                     <p className="text-sm text-gray-700">Encaminhamento técnico e opções de atuação, sempre com linguagem clara e objetiva.</p>
                   </div>
                 </li>
@@ -53,13 +52,12 @@ const ComoFunciona: React.FC = () => {
                     <div className="h-8 w-8 rounded-full bg-indigo-600 text-white flex items-center justify-center">4</div>
                   </div>
                   <div>
-                    <h5 className="text-sm font-semibold text-gray-900">Atendimento</h5>
+                    <h3 className="text-sm font-semibold text-gray-900">Atendimento</h3>
                     <p className="text-sm text-gray-700">Atendimento on-line para todo o Brasil; presencial quando necessário, mediante agendamento prévio.</p>
                   </div>
                 </li>
               </ol>
             </div>
-          </div>
         </div>
       </Container>
     </Section>

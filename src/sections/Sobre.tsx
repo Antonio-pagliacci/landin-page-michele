@@ -7,8 +7,7 @@ const Sobre: React.FC = () => {
   return (
     <Section id="sobre">
       <Container>
-        <div className="py-6">
-          <div className="bg-white rounded-md p-6">
+        <div className="bg-white rounded-md p-6 lg:p-8">
             <Title title="Sobre a advogada" subtitle="Apresentação institucional" />
 
             <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
@@ -22,7 +21,7 @@ const Sobre: React.FC = () => {
 
               <div>
                 <div className="bg-gray-50 border border-gray-100 rounded-md p-4">
-                  <h4 className="text-sm font-medium text-gray-900">Diferenciais</h4>
+                  <h3 className="text-sm font-medium text-gray-900">Diferenciais</h3>
                   <ul className="mt-3 text-sm text-gray-700 space-y-2">
                     <li>Atuação na Administração Pública</li>
                     <li>Formação de Agente de Contratação — Lei 14.133/2021</li>
@@ -32,7 +31,6 @@ const Sobre: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </Container>
     </Section>

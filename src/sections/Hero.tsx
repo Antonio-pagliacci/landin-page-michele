@@ -9,8 +9,7 @@ const Hero: React.FC = () => {
   return (
     <Section id="hero" className="bg-white">
       <Container>
-        <div className="py-8 sm:py-12">
-          <div className="flex flex-col-reverse lg:flex-row items-start gap-6 lg:gap-10">
+        <div className="flex flex-col-reverse lg:flex-row items-start gap-6 lg:gap-10">
             {/* Texto principal */}
             <div className="w-full lg:w-2/3">
               <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 leading-tight">
@@ -41,7 +40,7 @@ const Hero: React.FC = () => {
             {/* Bloco lateral discreto com pontos de atendimento */}
             <aside className="w-full lg:w-1/3">
               <div className="border border-gray-100 bg-gray-50 rounded-md p-4">
-                <h3 className="text-sm font-medium text-gray-900">Atendimento</h3>
+                <h2 className="text-sm font-medium text-gray-900">Atendimento</h2>
                 <ul className="mt-3 text-sm text-gray-700 space-y-2">
                   <li>Região atendida: Brasil</li>
                   <li>Modalidade: On-line</li>
@@ -49,7 +48,6 @@ const Hero: React.FC = () => {
                 </ul>
               </div>
             </aside>
-          </div>
         </div>
       </Container>
     </Section>

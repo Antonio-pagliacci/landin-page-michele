@@ -5,10 +5,10 @@ const whatsappNumber = '5522981554135'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white border-t mt-8">
+    <footer className="bg-white border-t">
       <Container>
-        <div className="py-8">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between md:items-start gap-6 text-sm text-gray-700">
+        <div className="py-10">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8 text-sm text-gray-700">
             <div className="space-y-2">
               <div className="text-gray-900 font-semibold">Michelle Faria</div>
               <div>OAB RJ 205.639</div>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-6 text-center text-xs text-gray-500">© {new Date().getFullYear()} Michelle Faria</div>
+          <div className="mt-8 pt-6 border-t text-center text-xs text-gray-500">© {new Date().getFullYear()} Michelle Faria — OAB RJ 205.639</div>
         </div>
       </Container>
     </footer>
