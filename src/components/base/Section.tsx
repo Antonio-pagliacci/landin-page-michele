@@ -8,7 +8,7 @@ type SectionProps = {
 
 const Section: React.FC<SectionProps> = ({ id, children, className = '' }) => {
   return (
-    <section id={id} className={`scroll-mt-20 py-8 sm:py-12 lg:py-16 ${className}`}>
+    <section id={id} className={`scroll-mt-20 py-12 sm:py-14 lg:py-20 ${className}`}>
       {children}
     </section>
   )

@@ -12,8 +12,12 @@ const Title: React.FC<TitleProps> = ({ title, subtitle, align = 'left', classNam
 
   return (
     <div className={`${alignClass} ${className}`}>
-      <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">{title}</h2>
-      {subtitle && <p className="mt-1 text-sm text-gray-600">{subtitle}</p>}
+      {subtitle && (
+        <p className="text-xs sm:text-sm uppercase tracking-[0.14em] text-gray-500">{subtitle}</p>
+      )}
+      <h2 className="mt-2 text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight leading-tight">
+        {title}
+      </h2>
     </div>
   )
 }

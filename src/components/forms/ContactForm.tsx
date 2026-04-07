@@ -31,14 +31,14 @@ const ContactForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} aria-live="polite">
-      <div className="space-y-4">
+      <div className="space-y-5">
         <div>
-          <label htmlFor="contact-name" className="block text-sm font-medium text-gray-700">Nome</label>
+          <label htmlFor="contact-name" className="block text-xs font-semibold uppercase tracking-[0.12em] text-slate-700">Nome</label>
           <input
             {...register('name')}
             id="contact-name"
             type="text"
-            className={`mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${errors.name ? 'border-red-500' : ''}`}
+            className={`mt-2 block w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 shadow-sm focus:border-amber-500 focus:ring-amber-500 ${errors.name ? 'border-red-500' : ''}`}
             aria-invalid={!!errors.name}
             aria-describedby={errors.name ? 'name-error' : undefined}
             />
@@ -46,12 +46,12 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div>
-          <label htmlFor="contact-phone" className="block text-sm font-medium text-gray-700">Telefone</label>
+          <label htmlFor="contact-phone" className="block text-xs font-semibold uppercase tracking-[0.12em] text-slate-700">Telefone</label>
           <input
             {...register('phone')}
             id="contact-phone"
             type="tel"
-            className={`mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${errors.phone ? 'border-red-500' : ''}`}
+            className={`mt-2 block w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 shadow-sm focus:border-amber-500 focus:ring-amber-500 ${errors.phone ? 'border-red-500' : ''}`}
             aria-invalid={!!errors.phone}
             aria-describedby={errors.phone ? 'phone-error' : undefined}
             />
@@ -59,19 +59,19 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div>
-          <label htmlFor="contact-message" className="block text-sm font-medium text-gray-700">Mensagem</label>
+          <label htmlFor="contact-message" className="block text-xs font-semibold uppercase tracking-[0.12em] text-slate-700">Mensagem</label>
           <textarea
             {...register('message')}
             id="contact-message"
             rows={5}
-            className={`mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${errors.message ? 'border-red-500' : ''}`}
+            className={`mt-2 block w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 shadow-sm focus:border-amber-500 focus:ring-amber-500 ${errors.message ? 'border-red-500' : ''}`}
             aria-invalid={!!errors.message}
             aria-describedby={errors.message ? 'message-error' : undefined}
           />
           {errors.message && <p id="message-error" className="mt-1 text-xs text-red-600">{errors.message.message}</p>}
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
           <Button type="submit" variant="primary" disabled={isSubmitting || status === 'loading'}>
             {status === 'loading' || isSubmitting ? 'Enviando...' : 'Enviar mensagem'}
           </Button>
