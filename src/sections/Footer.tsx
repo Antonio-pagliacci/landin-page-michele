@@ -15,6 +15,17 @@ const Footer: React.FC = () => {
               <p className="text-gray-600 mt-2">Assessoria jurídica em contratos administrativos e licitações. Atendimento profissional e institucional.</p>
             </div>
 
+            <nav className="space-y-2">
+              <div className="font-medium text-gray-900">Navegação</div>
+              <ul className="mt-2 space-y-1 text-sm">
+                <li><a href="#hero" className="text-gray-700 hover:text-indigo-600 hover:underline">Início</a></li>
+                <li><a href="#sobre" className="text-gray-700 hover:text-indigo-600 hover:underline">Sobre</a></li>
+                <li><a href="#areas-atuacao" className="text-gray-700 hover:text-indigo-600 hover:underline">Áreas de atuação</a></li>
+                <li><a href="#como-funciona" className="text-gray-700 hover:text-indigo-600 hover:underline">Como funciona</a></li>
+                <li><a href="#contato" className="text-gray-700 hover:text-indigo-600 hover:underline">Contato</a></li>
+              </ul>
+            </nav>
+
             <div className="space-y-2">
               <div className="font-medium text-gray-900">Contato</div>
               <div>
