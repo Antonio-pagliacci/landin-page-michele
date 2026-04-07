@@ -22,12 +22,12 @@ const Header: React.FC = () => {
 
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className="text-sm text-gray-700 hover:text-indigo-600">
+              <a key={link.href} href={link.href} className="text-sm text-gray-700 hover:text-indigo-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded">
                 {link.label}
               </a>
             ))}
 
-            <a href={`https://wa.me/5522981554135`} className="ml-4 text-sm px-3 py-1.5 bg-indigo-600 text-white rounded-md hover:opacity-95">WhatsApp</a>
+            <a href={`https://wa.me/5522981554135`} className="ml-4 text-sm px-3 py-1.5 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500">WhatsApp</a>
           </nav>
 
           <div className="md:hidden">
