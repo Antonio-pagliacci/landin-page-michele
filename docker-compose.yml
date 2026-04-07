@@ -1,0 +1,9 @@
+services:
+  landing:
+    container_name: landing-michelle
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8085:80"
