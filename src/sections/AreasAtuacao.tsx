@@ -35,7 +35,7 @@ const AreasAtuacao: React.FC = () => {
 
                 <div className="p-4 border border-gray-100 rounded-md bg-gray-50">
                   <h4 className="text-sm font-semibold text-gray-900">Orientação em Procedimentos</h4>
-                  <p className="mt-2 text-sm text-gray-700">Apoio em procedimentos internos da Administração Pública e adaptação às regras da Lei 14.133/2021.</p>
+                  <p className="mt-2 text-sm text-gray-700">Apoio em procedimentos internos da Administração Pública e orientação quanto às disposições da Lei 14.133/2021.</p>
                 </div>
               </div>
             </div>
