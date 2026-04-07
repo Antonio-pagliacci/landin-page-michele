@@ -11,7 +11,7 @@ const Sobre: React.FC = () => {
           <div className="bg-white rounded-md p-6">
             <Title title="Sobre a advogada" subtitle="Apresentação institucional" />
 
-            <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
               <div>
                 <p className="text-sm text-gray-700">
                   Michelle Faria — OAB RJ 205.639. Atua prestando assessoria jurídica com foco em contratos
@@ -27,7 +27,7 @@ const Sobre: React.FC = () => {
                     <li>Atuação na Administração Pública</li>
                     <li>Formação de Agente de Contratação — Lei 14.133/2021</li>
                     <li>Atendimento on-line para todo o Brasil</li>
-                    <li>Atendimento presencial com agendamento prévio</li>
+                    <li>Presencial com agendamento prévio</li>
                   </ul>
                 </div>
               </div>
