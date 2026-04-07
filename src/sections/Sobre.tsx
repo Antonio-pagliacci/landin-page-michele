@@ -7,12 +7,25 @@ const Sobre: React.FC = () => {
   return (
     <Section id="sobre">
       <Container>
-        <div className="py-6 bg-white rounded-md p-6">
-          <Title title="Sobre" subtitle="Assessoria Jurídica em contratos administrativos e licitações" />
-          <p className="mt-3 text-sm text-gray-700">
-            Michelle Faria (OAB RJ 205.639) presta assessoria jurídica com foco em contratos administrativos e licitações,
-            com experiência na Administração Pública. Atendimento online e presencial mediante agendamento.
-          </p>
+        <div className="py-6">
+          <div className="bg-white rounded-md p-6">
+            <Title title="Sobre a advogada" subtitle="Apresentação institucional" />
+
+            <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+                <p className="text-sm text-gray-700">
+                  Michelle Faria — OAB RJ 205.639. Atua prestando assessoria jurídica com foco em contratos
+                  administrativos e licitações, com atenção às práticas da Administração Pública. Oferece
+                  atendimento on-line para todo o Brasil e atendimento presencial mediante agendamento prévio.
+                </p>
+              </div>
+
+              <div>
+                {/* Placeholder for diferencial block to be added in next commit */}
+                <p className="text-sm text-gray-600">&nbsp;</p>
+              </div>
+            </div>
+          </div>
         </div>
       </Container>
     </Section>
