@@ -1,4 +1,6 @@
 import React from 'react'
+import Header from './components/layout/Header'
+import WhatsAppFloat from './components/ui/WhatsAppFloat'
 import Hero from './sections/Hero'
 import Sobre from './sections/Sobre'
 import AreasAtuacao from './sections/AreasAtuacao'
@@ -8,14 +10,18 @@ import Footer from './sections/Footer'
 
 const App: React.FC = () => {
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900">
-      <Hero />
-      <Sobre />
-      <AreasAtuacao />
-      <ComoFunciona />
-      <Contato />
-      <Footer />
-    </main>
+    <div className="min-h-screen bg-gray-50 text-gray-900">
+      <Header />
+      <main>
+        <Hero />
+        <Sobre />
+        <AreasAtuacao />
+        <ComoFunciona />
+        <Contato />
+        <Footer />
+      </main>
+      <WhatsAppFloat />
+    </div>
   )
 }
 
