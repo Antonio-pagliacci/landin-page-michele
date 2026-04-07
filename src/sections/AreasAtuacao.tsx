@@ -18,20 +18,24 @@ const AreasAtuacao: React.FC = () => {
 
             <div className="mt-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {/* Cards serão preenchidos no próximo commit */}
                 <div className="p-4 border border-gray-100 rounded-md bg-gray-50">
                   <h4 className="text-sm font-semibold text-gray-900">Licitações</h4>
-                  <p className="mt-2 text-sm text-gray-700">Orientação em processos licitatórios e análise de editais.</p>
+                  <p className="mt-2 text-sm text-gray-700">Orientação técnica em processos licitatórios, análise de oportunidades e conformidade com editais.</p>
                 </div>
 
                 <div className="p-4 border border-gray-100 rounded-md bg-gray-50">
                   <h4 className="text-sm font-semibold text-gray-900">Contratos Administrativos</h4>
-                  <p className="mt-2 text-sm text-gray-700">Elaboração, revisão e acompanhamento de contratos administrativos.</p>
+                  <p className="mt-2 text-sm text-gray-700">Elaboração, revisão e acompanhamento de contratos administrativos, com foco em mitigação de riscos.</p>
                 </div>
 
                 <div className="p-4 border border-gray-100 rounded-md bg-gray-50">
                   <h4 className="text-sm font-semibold text-gray-900">Assessoria Preventiva</h4>
-                  <p className="mt-2 text-sm text-gray-700">Orientação para prevenção de riscos contratuais e administrativos.</p>
+                  <p className="mt-2 text-sm text-gray-700">Orientação preventiva para gestão contratual e administrativas, visando segurança jurídica.</p>
+                </div>
+
+                <div className="p-4 border border-gray-100 rounded-md bg-gray-50">
+                  <h4 className="text-sm font-semibold text-gray-900">Orientação em Procedimentos</h4>
+                  <p className="mt-2 text-sm text-gray-700">Apoio em procedimentos internos da Administração Pública e adaptação às regras da Lei 14.133/2021.</p>
                 </div>
               </div>
             </div>
