@@ -1,43 +1,57 @@
-import React from 'react'
-import Container from '../components/base/Container'
-import Section from '../components/base/Section'
-import Title from '../components/base/Title'
+import Container from '@/components/base/Container'
+import Section from '@/components/base/Section'
+import Title from '@/components/base/Title'
+import AreaIcon from '@/components/icons/AreaIcon'
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon'
+import { AREAS_CARDS, WHATSAPP_URL } from '@/constants'
+import { useFadeIn } from '@/hooks/useFadeIn'
 
-const AreasAtuacao: React.FC = () => {
+const AreasAtuacao = () => {
+  const fadeTitle = useFadeIn(0)
+
   return (
-    <Section id="areas-atuacao" className="bg-white">
+    <Section id="areas-atuacao" className="bg-slate-900">
       <Container>
-        <div className="rounded-xl border border-slate-200 bg-slate-50/60 p-6 lg:p-10">
-            <Title title="Áreas de Atuação" subtitle="Frentes de atuação" />
+        <div ref={fadeTitle.ref} className={fadeTitle.className}>
+          <Title
+            title="Áreas de Atuação"
+            subtitle="Frentes de atuação"
+            align="center"
+            className="[&_p]:text-slate-400 [&_h2]:text-white"
+          />
+          <p className="mt-4 text-base text-slate-300 max-w-2xl mx-auto text-center leading-7">
+            Atuação concentrada em assessoria jurídica para contratos administrativos e licitações.
+          </p>
+        </div>
 
-            <p className="mt-4 text-base text-slate-700 max-w-3xl leading-7">
-              Atuação concentrada em assessoria jurídica para contratos administrativos e licitações.
-              Abaixo, frentes principais apresentadas de forma objetiva.
-            </p>
-
-            <div className="mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
-                <div className="p-5 lg:p-6 border border-slate-200 rounded-xl bg-white shadow-sm">
-                  <h3 className="text-base font-semibold text-slate-900">Licitações</h3>
-                  <p className="mt-2.5 text-sm text-slate-700 leading-6">Orientação técnica em processos licitatórios, análise de oportunidades e conformidade com editais.</p>
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {AREAS_CARDS.map((area, i) => {
+            const fade = useFadeIn(i * 100)
+            return (
+              <div
+                key={area.title}
+                ref={fade.ref}
+                className={`group relative p-6 lg:p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-indigo-400/30 transition-all duration-300 ${fade.className}`}
+              >
+                <div className="h-12 w-12 rounded-xl bg-indigo-500/15 flex items-center justify-center mb-5 group-hover:bg-indigo-500/25 transition-colors">
+                  <AreaIcon name={area.icon} className="h-6 w-6 text-indigo-400" />
                 </div>
-
-                <div className="p-5 lg:p-6 border border-slate-200 rounded-xl bg-white shadow-sm">
-                  <h3 className="text-base font-semibold text-slate-900">Contratos Administrativos</h3>
-                  <p className="mt-2.5 text-sm text-slate-700 leading-6">Elaboração, revisão e acompanhamento de contratos administrativos, com foco em mitigação de riscos.</p>
-                </div>
-
-                <div className="p-5 lg:p-6 border border-slate-200 rounded-xl bg-white shadow-sm">
-                  <h3 className="text-base font-semibold text-slate-900">Assessoria Preventiva</h3>
-                  <p className="mt-2.5 text-sm text-slate-700 leading-6">Orientação preventiva para gestão contratual e administrativa, visando segurança jurídica.</p>
-                </div>
-
-                <div className="p-5 lg:p-6 border border-slate-200 rounded-xl bg-white shadow-sm">
-                  <h3 className="text-base font-semibold text-slate-900">Orientação em Procedimentos</h3>
-                  <p className="mt-2.5 text-sm text-slate-700 leading-6">Apoio em procedimentos internos da Administração Pública e orientação quanto às disposições da Lei 14.133/2021.</p>
-                </div>
+                <h3 className="text-lg font-semibold text-white">{area.title}</h3>
+                <p className="mt-2.5 text-sm text-slate-300 leading-6">{area.description}</p>
               </div>
-            </div>
+            )
+          })}
+        </div>
+
+        {/* CTA intermediário */}
+        <div className="mt-12 text-center">
+          <a
+            href={WHATSAPP_URL}
+            className="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-base font-medium bg-indigo-600 text-white shadow-lg hover:bg-indigo-700 hover:shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 focus-visible:ring-indigo-500"
+          >
+            <WhatsAppIcon className="h-5 w-5" />
+            Consultar sobre sua demanda
+          </a>
         </div>
       </Container>
     </Section>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 type TitleProps = {
   title: string
   subtitle?: string
@@ -7,15 +5,15 @@ type TitleProps = {
   className?: string
 }
 
-const Title: React.FC<TitleProps> = ({ title, subtitle, align = 'left', className = '' }) => {
+const Title = ({ title, subtitle, align = 'left', className = '' }: TitleProps) => {
   const alignClass = align === 'center' ? 'text-center' : 'text-left'
 
   return (
     <div className={`${alignClass} ${className}`}>
       {subtitle && (
-        <p className="text-xs sm:text-sm uppercase tracking-[0.14em] text-gray-500">{subtitle}</p>
+        <p className="text-xs sm:text-sm uppercase tracking-[0.14em] text-slate-500">{subtitle}</p>
       )}
-      <h2 className="mt-2 text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight leading-tight">
+      <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight leading-tight">
         {title}
       </h2>
     </div>

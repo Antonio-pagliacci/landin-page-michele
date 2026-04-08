@@ -1,63 +1,47 @@
-import React from 'react'
-import Container from '../components/base/Container'
-import Section from '../components/base/Section'
-import Title from '../components/base/Title'
+import Container from '@/components/base/Container'
+import Section from '@/components/base/Section'
+import Title from '@/components/base/Title'
+import AreaIcon from '@/components/icons/AreaIcon'
+import { STEPS } from '@/constants'
+import { useFadeIn } from '@/hooks/useFadeIn'
 
-const ComoFunciona: React.FC = () => {
+const ComoFunciona = () => {
+  const fadeTitle = useFadeIn(0)
+
   return (
-    <Section id="como-funciona" className="bg-slate-50">
+    <Section id="como-funciona" className="bg-gradient-to-b from-white to-slate-50">
       <Container>
-        <div className="bg-white border border-slate-200 rounded-xl p-6 lg:p-10 shadow-sm">
-            <Title title="Como funciona o atendimento" subtitle="Fluxo organizado e objetivo" />
+        <div ref={fadeTitle.ref} className={`text-center ${fadeTitle.className}`}>
+          <Title title="Como funciona o atendimento" subtitle="Processo simples e objetivo" align="center" />
+          <p className="mt-4 text-base text-slate-600 max-w-2xl mx-auto leading-7">
+            Do contato inicial à solução: um fluxo organizado pensado para atender com agilidade e segurança.
+          </p>
+        </div>
 
-            <p className="mt-4 text-base text-slate-700 max-w-3xl leading-7">
-              Processo simples e orientado: contato inicial, análise da demanda e encaminhamento técnico.
-              O atendimento é realizado on-line para todo o Brasil; presencial com agendamento prévio.
-            </p>
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {STEPS.map((step, i) => {
+            const fade = useFadeIn(i * 120)
+            return (
+              <div key={step.number} ref={fade.ref} className={`relative text-center ${fade.className}`}>
+                {/* Linha conectora (desktop) */}
+                {i < STEPS.length - 1 && (
+                  <div className="hidden lg:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-slate-200" aria-hidden="true" />
+                )}
 
-            <div className="mt-8">
-              <ol className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
-                <li className="flex gap-4 p-5 rounded-xl border border-slate-200 bg-slate-50/70">
-                  <div className="flex-shrink-0">
-                    <div className="h-9 w-9 rounded-full bg-amber-600 text-white text-sm font-semibold flex items-center justify-center">1</div>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-semibold text-slate-900">Contato inicial</h3>
-                    <p className="mt-1.5 text-sm text-slate-700 leading-6">Contato via WhatsApp ou e-mail para expor a demanda e agendar primeira conversa.</p>
-                  </div>
-                </li>
+                {/* Ícone */}
+                <div className="mx-auto h-16 w-16 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-lg shadow-indigo-600/20 mb-5">
+                  <AreaIcon name={step.icon} className="h-7 w-7" />
+                </div>
 
-                <li className="flex gap-4 p-5 rounded-xl border border-slate-200 bg-slate-50/70">
-                  <div className="flex-shrink-0">
-                    <div className="h-9 w-9 rounded-full bg-amber-600 text-white text-sm font-semibold flex items-center justify-center">2</div>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-semibold text-slate-900">Análise da demanda</h3>
-                    <p className="mt-1.5 text-sm text-slate-700 leading-6">Avaliação preliminar dos documentos e identificação das necessidades do caso.</p>
-                  </div>
-                </li>
-
-                <li className="flex gap-4 p-5 rounded-xl border border-slate-200 bg-slate-50/70">
-                  <div className="flex-shrink-0">
-                    <div className="h-9 w-9 rounded-full bg-amber-600 text-white text-sm font-semibold flex items-center justify-center">3</div>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-semibold text-slate-900">Orientação jurídica</h3>
-                    <p className="mt-1.5 text-sm text-slate-700 leading-6">Encaminhamento técnico e opções de atuação, sempre com linguagem clara e objetiva.</p>
-                  </div>
-                </li>
-
-                <li className="flex gap-4 p-5 rounded-xl border border-slate-200 bg-slate-50/70">
-                  <div className="flex-shrink-0">
-                    <div className="h-9 w-9 rounded-full bg-amber-600 text-white text-sm font-semibold flex items-center justify-center">4</div>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-semibold text-slate-900">Atendimento</h3>
-                    <p className="mt-1.5 text-sm text-slate-700 leading-6">Atendimento on-line para todo o Brasil; presencial quando necessário, mediante agendamento prévio.</p>
-                  </div>
-                </li>
-              </ol>
-            </div>
+                {/* Número + texto */}
+                <span className="inline-block text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-2">
+                  Etapa {step.number}
+                </span>
+                <h3 className="text-base font-semibold text-slate-900">{step.title}</h3>
+                <p className="mt-2 text-sm text-slate-600 leading-6 max-w-xs mx-auto">{step.description}</p>
+              </div>
+            )
+          })}
         </div>
       </Container>
     </Section>
