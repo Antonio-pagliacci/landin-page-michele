@@ -32,7 +32,7 @@ const Hero = () => {
             {/* Coluna esquerda — 3 de 5 colunas */}
             <div className="lg:col-span-3">
               {/* Eyebrow institucional */}
-              <span className="inline-block text-xs sm:text-sm font-medium tracking-widest uppercase text-indigo-300 mb-4">
+              <span className="inline-block text-xs sm:text-sm font-medium tracking-widest uppercase text-amber-300 mb-4">
                 Assessoria Jurídica Especializada
               </span>
 
@@ -40,7 +40,7 @@ const Hero = () => {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
                 Segurança jurídica em
                 <br className="hidden sm:block" />
-                <span className="text-indigo-300"> contratos públicos</span> e licitações
+                <span className="text-amber-300"> contratos públicos</span> e licitações
               </h1>
 
               {/* Subheadline */}
@@ -93,14 +93,14 @@ const Hero = () => {
             {/* Coluna direita — Card institucional premium */}
             <aside className="lg:col-span-2">
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-2xl">
-                <h2 className="text-sm font-semibold uppercase tracking-wider text-indigo-300">
+                <h2 className="text-sm font-semibold uppercase tracking-wider text-amber-300">
                   Áreas de Atuação
                 </h2>
 
                 <ul className="mt-5 space-y-3">
                   {AREAS_ATUACAO.map((area) => (
                     <li key={area} className="flex items-start gap-2.5 text-sm text-slate-100">
-                      <svg className="h-4 w-4 mt-0.5 flex-shrink-0 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <svg className="h-4 w-4 mt-0.5 flex-shrink-0 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       {area}
@@ -111,7 +111,7 @@ const Hero = () => {
                 <div className="mt-6 pt-5 border-t border-white/15">
                   <a
                     href="#areas-atuacao"
-                    className="text-sm text-indigo-300 hover:text-indigo-200 font-medium transition-colors"
+                    className="text-sm text-amber-300 hover:text-amber-200 font-medium transition-colors"
                   >
                     Ver detalhes &rarr;
                   </a>

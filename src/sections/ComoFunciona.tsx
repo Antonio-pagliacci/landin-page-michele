@@ -29,12 +29,12 @@ const ComoFunciona = () => {
                 )}
 
                 {/* Ícone */}
-                <div className="mx-auto h-16 w-16 rounded-2xl bg-indigo-600 text-white flex items-center justify-center shadow-lg shadow-indigo-600/20 mb-5">
+                <div className="mx-auto h-16 w-16 rounded-2xl bg-amber-600 text-white flex items-center justify-center shadow-lg shadow-amber-600/20 mb-5">
                   <AreaIcon name={step.icon} className="h-7 w-7" />
                 </div>
 
                 {/* Número + texto */}
-                <span className="inline-block text-xs font-semibold uppercase tracking-widest text-indigo-600 mb-2">
+                <span className="inline-block text-xs font-semibold uppercase tracking-widest text-amber-600 mb-2">
                   Etapa {step.number}
                 </span>
                 <h3 className="text-base font-semibold text-slate-900">{step.title}</h3>

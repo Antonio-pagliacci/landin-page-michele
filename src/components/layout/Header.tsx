@@ -27,8 +27,8 @@ const Header = () => {
                 href={link.href}
                 className="relative text-sm text-slate-600 hover:text-slate-900 transition-colors
                   after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0
-                  after:bg-indigo-600 after:transition-all hover:after:w-full
-                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded"
+                  after:bg-amber-600 after:transition-all hover:after:w-full
+                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded"
               >
                 {link.label}
               </a>

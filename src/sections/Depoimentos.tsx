@@ -25,7 +25,7 @@ const Depoimentos = () => {
               >
                 {/* Aspas decorativas */}
                 <svg
-                  className="absolute top-5 right-5 h-8 w-8 text-indigo-100"
+                  className="absolute top-5 right-5 h-8 w-8 text-amber-100"
                   fill="currentColor"
                   viewBox="0 0 32 32"
                   aria-hidden="true"
