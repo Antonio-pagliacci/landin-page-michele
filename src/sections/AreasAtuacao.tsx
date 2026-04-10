@@ -47,7 +47,9 @@ const AreasAtuacao = () => {
         <div className="mt-12 text-center">
           <a
             href={WHATSAPP_URL}
-            className="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-base font-medium bg-indigo-600 text-white shadow-lg hover:bg-indigo-700 hover:shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 focus-visible:ring-indigo-500"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-base font-medium bg-green-600 text-white shadow-lg hover:bg-green-700 hover:shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 focus-visible:ring-green-500"
           >
             <WhatsAppIcon className="h-5 w-5" />
             Consultar sobre sua demanda

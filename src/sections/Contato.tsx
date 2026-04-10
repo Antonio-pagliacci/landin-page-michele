@@ -29,7 +29,9 @@ const Contato = () => {
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href={WHATSAPP_URL}
-              className="inline-flex items-center gap-2.5 rounded-xl px-8 py-4 text-lg font-semibold bg-indigo-600 text-white shadow-xl shadow-indigo-600/25 hover:bg-indigo-500 hover:shadow-2xl hover:shadow-indigo-600/30 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 focus-visible:ring-indigo-500"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2.5 rounded-xl px-8 py-4 text-lg font-semibold bg-green-600 text-white shadow-xl shadow-green-600/25 hover:bg-green-500 hover:shadow-2xl hover:shadow-green-600/30 hover:-translate-y-0.5 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 focus-visible:ring-green-500"
             >
               <WhatsAppIcon className="h-6 w-6" />
               Falar no WhatsApp

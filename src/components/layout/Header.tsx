@@ -36,10 +36,12 @@ const Header = () => {
 
             <a
               href={WHATSAPP_URL}
+              target="_blank"
+              rel="noreferrer"
               className="ml-2 inline-flex items-center gap-1.5 text-sm font-medium px-4 py-2
-                bg-indigo-600 text-white rounded-md shadow-sm
-                hover:bg-indigo-700 active:bg-indigo-800 transition-colors
-                focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
+                bg-green-600 text-white rounded-md shadow-sm
+                hover:bg-green-700 active:bg-green-800 transition-colors
+                focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-500"
             >
               <WhatsAppIcon className="h-4 w-4" />
               WhatsApp
@@ -83,9 +85,11 @@ const Header = () => {
 
             <a
               href={WHATSAPP_URL}
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setOpen(false)}
               className="block text-center mt-2 text-sm font-medium px-4 py-2.5
-                bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors"
+                bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors"
             >
               WhatsApp
             </a>
