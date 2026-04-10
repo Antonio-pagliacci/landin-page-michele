@@ -29,8 +29,8 @@ const Sobre = () => {
             <div className="aspect-[4/5] rounded-2xl bg-gradient-to-br from-slate-200 to-slate-100 overflow-hidden shadow-lg">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="mx-auto h-20 w-20 rounded-full bg-amber-600/10 flex items-center justify-center mb-4">
-                    <svg className="h-10 w-10 text-amber-600" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <div className="mx-auto h-20 w-20 rounded-full bg-orange-600/10 flex items-center justify-center mb-4">
+                    <svg className="h-10 w-10 text-orange-600" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                     </svg>
                   </div>
@@ -40,7 +40,7 @@ const Sobre = () => {
               </div>
             </div>
             {/* Badge decorativo */}
-            <div className="absolute -bottom-4 -right-4 bg-amber-600 text-white rounded-xl px-4 py-2 shadow-lg">
+            <div className="absolute -bottom-4 -right-4 bg-orange-600 text-white rounded-xl px-4 py-2 shadow-lg">
               <p className="text-xs font-semibold">Direito Público</p>
               <p className="text-[10px] opacity-80">Especialista</p>
             </div>
@@ -61,7 +61,7 @@ const Sobre = () => {
             <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
               {diferenciais.map((item) => (
                 <li key={item} className="flex items-start gap-2.5 text-sm text-slate-700">
-                  <svg className="h-5 w-5 mt-0.5 flex-shrink-0 text-amber-600" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <svg className="h-5 w-5 mt-0.5 flex-shrink-0 text-orange-600" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   {item}

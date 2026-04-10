@@ -31,10 +31,10 @@ const AreasAtuacao = () => {
               <div
                 key={area.title}
                 ref={fade.ref}
-                className={`group relative p-6 lg:p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-amber-400/30 transition-all duration-300 ${fade.className}`}
+                className={`group relative p-6 lg:p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-orange-400/30 transition-all duration-300 ${fade.className}`}
               >
-                <div className="h-12 w-12 rounded-xl bg-amber-500/15 flex items-center justify-center mb-5 group-hover:bg-amber-500/25 transition-colors">
-                  <AreaIcon name={area.icon} className="h-6 w-6 text-amber-400" />
+                <div className="h-12 w-12 rounded-xl bg-orange-500/15 flex items-center justify-center mb-5 group-hover:bg-orange-500/25 transition-colors">
+                  <AreaIcon name={area.icon} className="h-6 w-6 text-orange-400" />
                 </div>
                 <h3 className="text-lg font-semibold text-white">{area.title}</h3>
                 <p className="mt-2.5 text-sm text-slate-300 leading-6">{area.description}</p>

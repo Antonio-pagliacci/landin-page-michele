@@ -23,7 +23,7 @@ const Footer = () => {
               <ul className="space-y-1.5 text-sm">
                 {NAV_LINKS.map((link) => (
                   <li key={link.href}>
-                    <a href={link.href} className="text-slate-300 hover:text-amber-400 transition-colors">{link.label}</a>
+                    <a href={link.href} className="text-slate-300 hover:text-orange-400 transition-colors">{link.label}</a>
                   </li>
                 ))}
               </ul>
@@ -34,7 +34,7 @@ const Footer = () => {
               <div className="font-semibold text-white uppercase tracking-[0.1em] text-xs">Contato</div>
               <div className="space-y-1.5">
                 <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="block text-slate-300 hover:text-green-400 transition-colors">WhatsApp: {LAWYER.phone}</a>
-                <a href={`mailto:${LAWYER.email}`} className="block text-slate-300 hover:text-amber-400 transition-colors">{LAWYER.email}</a>
+                <a href={`mailto:${LAWYER.email}`} className="block text-slate-300 hover:text-orange-400 transition-colors">{LAWYER.email}</a>
               </div>
               <p className="text-slate-500 text-xs pt-2 leading-5">
                 Presencial com agendamento prévio.
