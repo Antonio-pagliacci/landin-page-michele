@@ -53,10 +53,12 @@ const Hero = () => {
               <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
                 <a
                   href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-md font-medium
-                    px-6 py-3 text-base bg-indigo-600 text-white shadow-lg
-                    hover:bg-indigo-700 active:bg-indigo-800 transition-colors
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
+                    px-6 py-3 text-base bg-green-600 text-white shadow-lg
+                    hover:bg-green-700 active:bg-green-800 transition-colors
+                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-500"
                 >
                   <WhatsAppIcon />
                   Falar no WhatsApp

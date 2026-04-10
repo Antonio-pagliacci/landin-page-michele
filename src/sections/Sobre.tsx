@@ -73,7 +73,9 @@ const Sobre = () => {
             <div className="mt-8">
               <a
                 href={WHATSAPP_URL}
-                className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium bg-indigo-600 text-white shadow-md hover:bg-indigo-700 hover:shadow-lg transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium bg-green-600 text-white shadow-md hover:bg-green-700 hover:shadow-lg transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-500"
               >
                 <WhatsAppIcon className="h-4 w-4" />
                 Agendar uma conversa
