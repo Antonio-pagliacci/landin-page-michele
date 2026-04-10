@@ -13,41 +13,58 @@ export const LAWYER = {
 export const NAV_LINKS = [
   { href: '#hero', label: 'Início' },
   { href: '#sobre', label: 'Sobre' },
-  { href: '#areas-atuacao', label: 'Áreas de atuação' },
+  { href: '#areas-atuacao', label: 'Serviços' },
   { href: '#como-funciona', label: 'Como funciona' },
   { href: '#depoimentos', label: 'Depoimentos' },
   { href: '#contato', label: 'Contato' },
 ] as const
 
 export const AREAS_ATUACAO = [
-  'Contratos Administrativos',
-  'Licitações e Pregões',
-  'Direito Administrativo',
-  'Consultoria à Administração Pública',
-  'Agente de Contratação (Lei 14.133/2021)',
+  'Análise e gestão de contratos administrativos',
+  'Assessoria em processos licitatórios',
+  'Consultoria em conformidade e segurança jurídica',
+  'Mitigação de riscos contratuais',
+  'Suporte na comunicação com órgãos públicos',
 ] as const
 
 export const AREAS_CARDS = [
   {
-    title: 'Licitações',
-    description: 'Orientação técnica em processos licitatórios, análise de oportunidades e conformidade com editais.',
+    title: 'Análise e gestão de contratos administrativos',
+    description: 'Acompanhamento técnico da contratação pública, com foco em conformidade e eficiência na execução contratual.',
     icon: 'gavel',
   },
   {
-    title: 'Contratos Administrativos',
-    description: 'Elaboração, revisão e acompanhamento de contratos administrativos, com foco em mitigação de riscos.',
+    title: 'Assessoria em processos licitatórios',
+    description: 'Orientação jurídica em todas as etapas da licitação, da análise de edital ao suporte na condução do processo.',
     icon: 'document',
   },
   {
-    title: 'Assessoria Preventiva',
-    description: 'Orientação preventiva para gestão contratual e administrativa, visando segurança jurídica.',
+    title: 'Consultoria em conformidade e segurança jurídica',
+    description: 'Estruturação de práticas aderentes à legislação e aos controles internos da Administração Pública.',
     icon: 'shield',
   },
   {
-    title: 'Orientação em Procedimentos',
-    description: 'Apoio em procedimentos internos da Administração Pública e orientação quanto à Lei 14.133/2021.',
+    title: 'Identificação e mitigação de riscos contratuais',
+    description: 'Mapeamento preventivo de riscos e recomendações para reduzir passivos e contingências.',
     icon: 'clipboard',
   },
+  {
+    title: 'Elaboração de documentos técnicos e administrativos',
+    description: 'Produção de documentos com linguagem clara e fundamento técnico para apoiar decisões e processos.',
+    icon: 'search',
+  },
+  {
+    title: 'Suporte na comunicação com órgãos públicos',
+    description: 'Apoio estratégico na formalização de comunicações institucionais e respostas administrativas.',
+    icon: 'handshake',
+  },
+] as const
+
+export const DIFERENCIAIS = [
+  'Atuação especializada em Administração Pública',
+  'Foco em eficiência e resultados',
+  'Redução de riscos e passivos contratuais',
+  'Atendimento personalizado conforme a necessidade do cliente',
 ] as const
 
 export const STEPS = [
