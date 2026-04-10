@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon'
-import { NAV_LINKS, WHATSAPP_URL } from '@/constants'
+import { LAWYER, NAV_LINKS, WHATSAPP_URL } from '@/constants'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
@@ -10,12 +10,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex items-center justify-between h-16 lg:h-[4.5rem]">
           {/* Marca */}
-          <a href="#hero" className="flex flex-col leading-tight">
-            <span className="text-base font-semibold tracking-tight text-slate-900">
-              Michelle Faria
+          <a href="#hero" className="group flex flex-col leading-none">
+            <span className="text-lg font-semibold tracking-[0.04em] text-slate-900">
+              {LAWYER.name}
             </span>
-            <span className="text-[11px] text-slate-500 tracking-wide">
-              Advogada &bull; OAB RJ 205.639
+            <span className="mt-1 text-[10px] uppercase tracking-[0.32em] text-slate-500 group-hover:text-slate-700 transition-colors">
+              Advocacia e Consultoria
             </span>
           </a>
 

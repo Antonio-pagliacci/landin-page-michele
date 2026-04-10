@@ -9,7 +9,14 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 text-sm">
             {/* Coluna 1: Marca */}
             <div className="space-y-3">
-              <div className="text-white font-semibold text-base">{LAWYER.name}</div>
+              <div className="leading-none">
+                <div className="text-white text-xl font-semibold tracking-[0.04em]">
+                  {LAWYER.name}
+                </div>
+                <div className="mt-1 text-[10px] uppercase tracking-[0.32em] text-slate-400">
+                  Advocacia e Consultoria
+                </div>
+              </div>
               <div className="text-slate-300">Advogada • {LAWYER.oab}</div>
               <p className="text-slate-400 leading-6">
                 Assessoria jurídica em contratos administrativos e licitações.
@@ -43,7 +50,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-10 pt-6 border-t border-slate-800 text-center text-xs text-slate-400">
-            © {new Date().getFullYear()} {LAWYER.name} — {LAWYER.oab}
+            © {new Date().getFullYear()} {LAWYER.name} — {LAWYER.oab} • Desenvolvido por Plagard Systems
           </div>
         </div>
       </Container>

@@ -3,7 +3,7 @@ import Section from '@/components/base/Section'
 import Title from '@/components/base/Title'
 import AreaIcon from '@/components/icons/AreaIcon'
 import WhatsAppIcon from '@/components/icons/WhatsAppIcon'
-import { AREAS_CARDS, WHATSAPP_URL } from '@/constants'
+import { AREAS_CARDS, DIFERENCIAIS, WHATSAPP_URL } from '@/constants'
 import { useFadeIn } from '@/hooks/useFadeIn'
 
 const AreasAtuacao = () => {
@@ -14,13 +14,13 @@ const AreasAtuacao = () => {
       <Container>
         <div ref={fadeTitle.ref} className={fadeTitle.className}>
           <Title
-            title="Áreas de Atuação"
-            subtitle="Frentes de atuação"
+            title="Serviços Oferecidos"
+            subtitle="Atuação jurídica especializada"
             align="center"
             className="[&_p]:text-slate-400 [&_h2]:text-white"
           />
           <p className="mt-4 text-base text-slate-300 max-w-2xl mx-auto text-center leading-7">
-            Atuação concentrada em assessoria jurídica para contratos administrativos e licitações.
+            Serviços voltados para contratos administrativos, licitações, conformidade e redução de riscos.
           </p>
         </div>
 
@@ -41,6 +41,20 @@ const AreasAtuacao = () => {
               </div>
             )
           })}
+        </div>
+
+        <div className="mt-10">
+          <h3 className="text-center text-sm tracking-wide uppercase text-slate-400">Diferenciais</h3>
+          <ul className="mt-4 flex flex-wrap items-center justify-center gap-3">
+            {DIFERENCIAIS.map((item) => (
+              <li
+                key={item}
+                className="rounded-full border border-orange-400/30 bg-orange-500/10 px-4 py-2 text-sm text-orange-100"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* CTA intermediário */}

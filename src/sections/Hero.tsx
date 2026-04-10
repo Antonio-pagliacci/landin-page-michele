@@ -25,6 +25,9 @@ const Hero = () => {
       {/* Leve camada extra para leitura */}
       <div className="absolute inset-0 bg-black/20" />
 
+      {/* Movimento atmosférico sutil */}
+      <div className="hero-drift-layer absolute inset-y-0 left-0 w-[38%] bg-gradient-to-r from-orange-500/14 via-orange-400/6 to-transparent pointer-events-none" />
+
       {/* Conteúdo */}
       <div className="relative z-10 w-full py-24 sm:py-28 lg:py-32">
         <Container>
@@ -32,32 +35,32 @@ const Hero = () => {
             {/* Coluna esquerda — 3 de 5 colunas */}
             <div className="lg:col-span-3">
               {/* Eyebrow institucional */}
-              <span className="inline-block text-xs sm:text-sm font-medium tracking-widest uppercase text-orange-300 mb-4">
+              <span className="hero-reveal hero-delay-1 inline-block text-xs sm:text-sm font-medium tracking-widest uppercase text-orange-300 mb-4">
                 Assessoria Jurídica Especializada
               </span>
 
               {/* Headline */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+              <h1 className="hero-reveal hero-delay-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
                 Segurança jurídica em
                 <br className="hidden sm:block" />
                 <span className="text-orange-300"> contratos públicos</span> e licitações
               </h1>
 
               {/* Subheadline */}
-              <p className="mt-5 text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed">
-                Atuação especializada para a Administração Pública e entidades contratantes.
+              <p className="hero-reveal hero-delay-3 mt-5 text-base sm:text-lg text-slate-200 max-w-2xl leading-relaxed">
+                Atuação especializada em Administração Pública e entidades contratantes.
                 Atendimento on-line para todo o Brasil, presencial com agendamento prévio.
               </p>
 
               {/* Botões */}
-              <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+              <div className="hero-reveal hero-delay-4 mt-8 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-md font-medium
                     px-6 py-3 text-base bg-green-600 text-white shadow-lg
-                    hover:bg-green-700 active:bg-green-800 transition-colors
+                    hover:bg-green-700 active:bg-green-800 transition-all hover:-translate-y-px
                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-500"
                 >
                   <WhatsAppIcon />
@@ -69,7 +72,7 @@ const Hero = () => {
                   className="inline-flex items-center justify-center rounded-md font-medium
                     px-6 py-3 text-base text-white
                     border border-white/30 bg-white/5 backdrop-blur-sm
-                    hover:bg-white/15 hover:border-white/50 transition-colors
+                    hover:bg-white/15 hover:border-white/50 transition-all hover:-translate-y-px
                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white/60"
                 >
                   Agendar atendimento
@@ -77,7 +80,7 @@ const Hero = () => {
               </div>
 
               {/* Prova institucional */}
-              <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4 pt-8 border-t border-white/15">
+              <div className="hero-reveal hero-delay-5 mt-10 flex flex-col sm:flex-row sm:items-center gap-4 pt-8 border-t border-white/15">
                 <div>
                   <p className="text-sm font-semibold text-white">{LAWYER.name}</p>
                   <p className="text-xs text-slate-400 mt-0.5">Advogada &bull; {LAWYER.oab}</p>
@@ -91,10 +94,10 @@ const Hero = () => {
             </div>
 
             {/* Coluna direita — Card institucional premium */}
-            <aside className="lg:col-span-2">
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-2xl">
+            <aside className="hero-reveal hero-delay-4 lg:col-span-2">
+              <div className="hero-card bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 shadow-2xl">
                 <h2 className="text-sm font-semibold uppercase tracking-wider text-orange-300">
-                  Áreas de Atuação
+                  Serviços Oferecidos
                 </h2>
 
                 <ul className="mt-5 space-y-3">
@@ -113,7 +116,7 @@ const Hero = () => {
                     href="#areas-atuacao"
                     className="text-sm text-orange-300 hover:text-orange-200 font-medium transition-colors"
                   >
-                    Ver detalhes &rarr;
+                    Ver serviços &rarr;
                   </a>
                 </div>
               </div>
@@ -121,6 +124,7 @@ const Hero = () => {
           </div>
         </Container>
       </div>
+
     </section>
   )
 }
